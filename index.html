@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="myContainer">
+        <h2>Click to play:</h2>
+        <div id="controls">
+            <div class="control">
+                <button class="gameButton" id="rock"></button>
+                <p>Rock</p>
+            </div>
+            <div class="control">
+                <button class="gameButton" id="paper"></button>
+                <p>Paper</p>
+            </div>
+            <div class="control">
+                <button class="gameButton" id="scissors"></button>
+                <p>Scissors</p>
+            </div>
+        </div>
+        <br><br>
+        <h2>🏁  🏁  🏁  🏁  🏁  🏁  🏁  🏁  🏁  🏁  🏁  🏁  🏁</h2>
+        <br><br>
+        <div id="resultsContainer">
+            <div id="container2">
+                <div class="control">
+                    <h2>Your Pick</h2>
+                    <img src="img/paper.png" class="gameButton2" id="yourPick">
+                </div>
+                <h3 id="comparisonText">></h3>
+                <div class="control">
+                    <h2>Computer's Pick</h2>
+                    <img src="img/paper.png" class="gameButton2" id="computerPick">
+                </div>
+            </div>
+            <div id="container3">
+                <h1 id="resultText">You Win!</h1>
+                <h2>Your Score: <span id="yourScore">0</span></h2>
+                <h2>Computer's Score: <span id="computerScore">0</span></h2>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
