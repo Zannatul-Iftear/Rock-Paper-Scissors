@@ -7,9 +7,17 @@ let yourScoreText = document.querySelector("#yourScore");
 let computerScoreText = document.querySelector("#computerScore");
 
 let resultsContainer = document.querySelector("#resultsContainer");
+let container2 = document.querySelector("#container2");
+let container3 = document.querySelector("#container3");
 
 resultsContainer.style.visibility='hidden';
 resultsContainer.style.height='0px';
+
+container2.style.visibility='hidden';
+container2.style.height='0px';
+
+container3.style.visibility='hidden';
+container3.style.height='0px';
 
 let yourPick="";
 let computerPick="";
@@ -23,6 +31,10 @@ choices.forEach((choice) => {
     choice.addEventListener("click",()=>{
         resultsContainer.style.visibility='visible';
         resultsContainer.style.height='fit-content';
+        container2.style.visibility='visible';
+        container2.style.height='fit-content';
+        container3.style.visibility='visible';
+        container3.style.height='fit-content';
 
         computerPick=options[Math.floor(Math.random()*3)];
         yourPick=choice.id;
