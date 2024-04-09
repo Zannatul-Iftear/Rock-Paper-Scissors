@@ -27,11 +27,12 @@ h2{
     min-height: 92vh;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
 }
 
 #controls{
     display: flex;
-    padding: 20px;
+    padding: 0px;
     justify-content: center;
     margin: 0;
     width: 100vw;
@@ -161,8 +162,7 @@ h2{
         font-size: 20px;
     }
     #controls{
-        padding: 5px;
-        width: 100vw;
+        width: 98vw;
     }
 
     #container3 h1{
